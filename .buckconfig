@@ -2,6 +2,10 @@
   ignore = .git
 
 [cxx]
+  cxxflags = -std=c++14
   should_remap_host_platform = true
-  untracked_headers = error
+  untracked_headers = warn
   untracked_headers_whitelist = /usr/include/.*, /usr/lib/gcc/.*
+
+[parser]
+  default_build_file_syntax = SKYLARK
